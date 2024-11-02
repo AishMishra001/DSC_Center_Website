@@ -38,31 +38,6 @@
                         
                         }
 
-                        .header {
-                          position: fixed;
-                          width: 100%;
-                          top: 0;
-                          left: 0;
-                          background-color: transparent;
-                          text-align: left; /* Initial alignment */
-                          transition: all 0.3s; /* Smooth transition */
-                          z-index: 1000;
-                      }
-
-                      .header.scrolled {
-                          background-color: #011e24; /* Example background color */
-                          
-                      }
-
-
-
-
-
-                      #header.scrolled {
-                        background-color: #011e24; /* Opaque color */
-                        text-align: left;
-                      }
-
 
                       h1 {
                         font-size: 2.5rem;
@@ -72,30 +47,74 @@
                         text-align: left;
                         flex: 1;
                       }
-
                       #navmenu {
-                        display: flex;
-                        justify-content: left;
-                        margin-top: 1%;
-                        margin-left: -0.75%;
-                      }
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 1%;
+      margin-left: -0.75%;
+    }
 
-                      #navmenu ul {
-                        display: flex;
-                      }
+    #navmenu ul {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
 
-                      @font-face {
-                        font-family: 'Bitter';
-                        src: url('assets/Font/Bitter-Bold/bitter/Bitter-Regular.ttf') format('truetype');
-                        font-weight: normal;
-                        font-style: normal;
-                      }
-                      #navmenu ul li a {
-                        color: #c6f5fa;
-                        font-weight: bold;
-                        font-family: 'Bitter', sans-serif;
-                        font-size: 1.1rem;
-                      }
+    #navmenu ul li {
+      margin-right: 1rem;
+    }
+
+    @font-face {
+      font-family: 'Bitter';
+      src: url('assets/Font/Bitter-Bold/bitter/Bitter-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    #navmenu ul li a {
+      color: #c6f5fa;
+      font-weight: bold;
+      font-family: 'Bitter', sans-serif;
+      font-size: 1.1rem;
+      text-decoration: none;
+    }
+
+    /* Desktop */
+    @media (min-width: 1024px) {
+      #navmenu ul li a {
+        font-size: 1.1rem;
+      }
+    }
+
+    /* Tablet */
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #navmenu ul li a {
+        font-size: 1rem;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+      #navmenu {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+      }
+
+      #navmenu ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #navmenu ul li {
+        margin: 0.5rem 0;
+      }
+
+      #navmenu ul li a {
+        font-size: 0.9rem;
+      }
+    }
 
                       .mobile-nav-toggle {
                         font-size: 2rem;
@@ -141,6 +160,79 @@
                               font-style: normal;
                           }
 
+                        /* Header Styles */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  text-align: center; /* Align center for consistent layout */
+  transition: all 0.3s; /* Smooth transition */
+  z-index: 1000;
+  padding: 20px;
+}
+
+.header.scrolled {
+  background-color: #011e24; /* Background color on scroll */
+}
+
+.header .text {
+  color: #c6f5fa;
+  margin: 0 auto;
+  font-family: 'AllrounderAntiqua', serif;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .header .text {
+    font-size: 2.7rem;
+    line-height: 0.8;
+    margin-left: 10%;
+    margin-top: 2%;
+  }
+
+  .header .text span {
+    font-size: 2rem;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header .text {
+    font-size: 2.2rem;
+    margin-left: 5%;
+    margin-top: 1.5%;
+  }
+
+  .header .text span {
+    font-size: 1.6rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .header {
+    padding: 10px;
+  }
+
+  .header .text {
+    font-size: 1.8rem;
+    margin-left: 2%;
+    margin-top: 1%;
+  }
+
+  .header .text span {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ul-element {
+    padding-left: 150px;
+  }
+}
+
                 </style>
 
 </head>
@@ -148,17 +240,19 @@
 <!-------------------HEADER------------------------>
 
 <body class="index-page">
-          <header id="header" class="header fixed-top">
-              <div class="header-top">
-                    <h1 class="text" style="color: #c6f5fa; margin-left: 10%; margin-top: 1%; font-size: 2.7rem; line-height: 0.8; font-family: 'AllrounderAntiqua', serif; ">
-                      DST Centre of Excellence for Climate Information <br>
-                      <span style="font-size: 2rem; font-family: 'AllrounderAntiqua', serif; "> Indian Institute of Technology Delhi </span>
+  <header id="header" class="header fixed-top">
+    <div class="header-top">
+      <h1 class="text">
+        DST Centre of Excellence for Climate Information <br>
+        <span>Indian Institute of Technology Delhi</span>
+      
+
 
 
                   <!-------------------NAVIGATION------------------------>
 
                   <nav id="navmenu" class="navmenu">
-                    <ul>
+                    <ul class="ul-element">
                       <li class="current"><a href="#home" class="smoothscroll">Home</a></li>
                       <li><a href="#about" class="smoothscroll">About</a></li>
                       <li><a href="#research" class="smoothscroll">Research</a></li>
