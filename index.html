@@ -96,23 +96,32 @@
 
     /* Mobile */
     @media (max-width: 767px) {
-      #navmenu {
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-      }
-
+      /* Hide the nav menu initially on mobile */
       #navmenu ul {
+        display: none;
         flex-direction: column;
-        align-items: center;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #011e24;
+        padding: 1rem 0;
+        z-index: 1000;
+        text-align: center;
       }
 
       #navmenu ul li {
-        margin: 0.5rem 0;
+        margin: 1rem 0;
       }
 
       #navmenu ul li a {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
+      }
+      
+      /* Show the menu when open class is added */
+      #navmenu.open ul {
+        display: flex; 
+        gap: 4px ;
       }
     }
 
@@ -161,17 +170,35 @@
                           }
 
                         /* Header Styles */
-.header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: transparent;
-  text-align: center; /* Align center for consistent layout */
-  transition: all 0.3s; /* Smooth transition */
-  z-index: 1000;
-  padding: 20px;
-}
+                        .header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-color: transparent;
+      text-align: center;
+      transition: all 0.3s;
+      z-index: 1000;
+      padding: 20px;
+    }
+
+     /* Hamburger Icon for Mobile */
+     .hamburger {
+      display: block ;
+      font-size: 1.5rem;
+      color: #c6f5fa;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1001;
+    }
+
+    .header-top h1 {
+      color: #c6f5fa;
+      font-family: 'AllrounderAntiqua', serif;
+    }
+
 
 .header.scrolled {
   background-color: #011e24; /* Background color on scroll */
@@ -226,13 +253,6 @@
     font-size: 1.4rem;
   }
 }
-
-@media (min-width: 1200px) {
-  .ul-element {
-    padding-left: 150px;
-  }
-}
-
                 </style>
 
 </head>
@@ -248,19 +268,20 @@
       
 
 
+                  <div class="hamburger" onclick="toggleMenu()">☰</div>
 
                   <!-------------------NAVIGATION------------------------>
 
                   <nav id="navmenu" class="navmenu">
-                    <ul class="ul-element">
-                      <li class="current"><a href="#home" class="smoothscroll">Home</a></li>
-                      <li><a href="#about" class="smoothscroll">About</a></li>
-                      <li><a href="#research" class="smoothscroll">Research</a></li>
-                      <li><a href="#publications" class="smoothscroll">Publications</a></li>
-                      <li><a href="#leadership" class="smoothscroll">Leadership</a></li>
-                      <li><a href="#advisory" class="smoothscroll">Advisors</a></li>
-                      <li><a href="#opportunites" class="smoothscroll">Opportunities</a></li>
-                      <li><a href="#contact" class="smoothscroll">Contact Us</a></li>
+                    <ul>
+                      <li class="current"><a href="#home" class="smoothscroll nav-links">Home</a></li>
+                      <li><a href="#about" class="smoothscroll nav-links">About</a></li>
+                      <li><a href="#research" class="smoothscroll nav-links">Research</a></li>
+                      <li><a href="#publications" class="smoothscroll nav-links">Publications</a></li>
+                      <li><a href="#leadership" class="smoothscroll nav-links">Leadership</a></li>
+                      <li><a href="#advisory" class="smoothscroll nav-links">Advisors</a></li>
+                      <li><a href="#opportunites" class="smoothscroll nav-links">Opportunities</a></li>
+                      <li><a href="#contact" class="smoothscroll nav-links">Contact Us</a></li>
                     </ul>
               </nav>
 
@@ -449,6 +470,21 @@
 
                 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
                 <script>
+
+                
+function toggleMenu() {
+      const navMenu = document.getElementById('navmenu');
+      navMenu.classList.toggle('open');
+    }
+
+    document.querySelectorAll(".nav-links").forEach(link=>{
+      link.addEventListener('click',()=>{
+        const navmenu = document.getElementById('navmenu') ; 
+        if(navmenu.classList.contains('open')){
+          navmenu.classList.remove('open') ; 
+        }
+      })
+    })
                 window.addEventListener('scroll', function() {
                   var header = document.getElementById('header');
                   if (window.scrollY > 50) {
