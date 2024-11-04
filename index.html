@@ -312,21 +312,22 @@
 
                       /*FOR ALL TEXT IN THE*/
                       
-                      @media (min-width: 1024px) {
+                      /* Large screens (1024px and up) */
+@media (min-width: 1024px) {
   .text-box {
     width: 600px;
     height: 340px;
     padding: 20px;
-    background-color: rgba(200, 252, 255, 0.5); /* Updated to use rgba for 50% transparency */
+    background-color: rgba(200, 252, 255, 0.5); /* 50% transparency */
     border-radius: 8px;
     text-align: center;
     position: relative;
     z-index: 2;
     overflow: hidden;
-    display: flex; /* Flex display for center alignment */
+    display: flex; /* Ensure it's visible */
     justify-content: center;
     align-items: center;
-    margin-left: -48%;
+    /* margin-left: -48%; Temporarily remove for testing */
   }
 }
 
@@ -336,7 +337,10 @@
     width: 400px;
     height: 200px;
     padding: 10px;
-    margin-left: auto; /* Center on smaller screens */
+    display: flex; /* Ensure it's visible */
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
     margin-right: auto;
   }
 }
@@ -347,10 +351,14 @@
     width: 200px;
     height: 100px;
     padding: 5px;
+    display: flex; /* Ensure it's visible */
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
   }
 }
+
 
                       #dynamic-title {
                           font-weight: bold; /* Make title bold */
