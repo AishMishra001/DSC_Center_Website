@@ -607,45 +607,47 @@ function toggleMenu() {
                         let intervalId;
 
                         function updateParagraph() {
-                            const elements = [titleElement, paragraphElement, journalElement, dynamicImage];
+    const elements = [titleElement, paragraphElement, journalElement, dynamicImage];
 
-                            elements.forEach(el => el.classList.add('sliding-out'));
+    // Step 1: Apply sliding-out animation
+    elements.forEach(el => el.classList.add('sliding-out'));
 
-                            setTimeout(() => {
-                                elements.forEach(el => el.classList.remove('sliding-out'));
+    setTimeout(() => {
+        // Step 2: Remove sliding-out class and update content
+        elements.forEach(el => el.classList.remove('sliding-out'));
 
-                                titleElement.textContent = titles[currentIndex];
-                                titleElement.href = links[currentIndex];
-                                paragraphElement.textContent = paragraphs[currentIndex];
-                                paragraphElement.href = links[currentIndex];
-                                journalElement.textContent = journals[currentIndex];
+        // Update text content and links
+        titleElement.textContent = titles[currentIndex];
+        titleElement.href = links[currentIndex];
+        paragraphElement.textContent = paragraphs[currentIndex];
+        paragraphElement.href = links[currentIndex];
+        journalElement.textContent = journals[currentIndex];
 
-                                if (currentIndex === images.length - 1) {
-                                    dynamicImage.src = images[currentIndex].mainImage;
-                                    dynamicImage.style.width = imageSizes[currentIndex].width;
-                                    dynamicImage.style.height = imageSizes[currentIndex].height;
-                                    dynamicImage.style.display = 'block';
+        // Update the image and link based on the currentIndex
+        if (currentIndex === images.length - 1) {
+            dynamicImage.src = images[currentIndex].mainImage;
+            dynamicImageLink.href = images[currentIndex].pdfLink;
+        } else {
+            dynamicImage.src = images[currentIndex];
+            dynamicImageLink.removeAttribute('href'); // Remove link when not the last slide
+        }
 
-                                    // Set link to the PDF
-                                    dynamicImageLink.href = images[currentIndex].pdfLink;
-                                } else {
-                                    dynamicImage.src = images[currentIndex];
-                                    dynamicImage.style.width = imageSizes[currentIndex].width;
-                                    dynamicImage.style.height = imageSizes[currentIndex].height;
-                                    dynamicImage.style.display = 'block';
+        // Set image dimensions and ensure it’s visible
+        dynamicImage.style.width = imageSizes[currentIndex].width;
+        dynamicImage.style.height = imageSizes[currentIndex].height;
+        dynamicImage.style.display = 'block';
 
-                                    // Remove link when not the last slide
-                                    dynamicImageLink.removeAttribute('href');
-                                }
+        // Step 3: Apply sliding-in animation to make elements reappear
+        elements.forEach(el => el.classList.add('sliding-in'));
 
-                                elements.forEach(el => el.classList.add('sliding-in'));
+        // Step 4: Clean up sliding-in class after animation completes
+        setTimeout(() => {
+            elements.forEach(el => el.classList.remove('sliding-in'));
+        }, 500);
 
-                                setTimeout(() => {
-                                    elements.forEach(el => el.classList.remove('sliding-in'));
-                                }, 500);
+    }, 500); // Timing aligns with slideOut animation duration
+}
 
-                            }, 500);
-                        }
 
                         function goNext() {
                             currentIndex = (currentIndex + 1) % paragraphs.length;
