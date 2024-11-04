@@ -123,6 +123,10 @@
         display: flex; 
         gap: 4px ;
       }
+
+      @media (min-width : 1024px) {
+        
+      }
     }
 
                       .mobile-nav-toggle {
@@ -307,21 +311,40 @@
                       }
 
                       /*FOR ALL TEXT IN THE*/
+                      
+                      @media (min-width : 1024px){
+                        .text-box {
+                          width: 600px; /* Fixed width */
+                          height: 340px; /* Fixed height */
+                          padding: 20px;
+                          background-color: #c8fcff7e; /* 50% transparency */
+                          border-radius: 8px;
+                          text-align: center;
+                          position: relative;
+                          z-index: 2; /* Ensure it's above other content like video */
+                          overflow: hidden; /* Ensure content doesn't overflow the box */
+                          display: block;
+                          justify-content: center;
+                          align-items: center;
+                          margin-left: -48%;
+                        }
+                    }  
+
+                    @media ((min-width:768px) and (max-width:1023px)) {
                       .text-box {
-                        width: 600px; /* Fixed width */
-                        height: 340px; /* Fixed height */
-                        padding: 20px;
-                        background-color: #c8fcff7e; /* 50% transparency */
-                        border-radius: 8px;
-                        text-align: center;
-                        position: relative;
-                        z-index: 2; /* Ensure it's above other content like video */
-                        overflow: hidden; /* Ensure content doesn't overflow the box */
-                        display: block;
-                        justify-content: center;
-                        align-items: center;
-                        margin-left: -48%;
+                        width : 400px ; 
+                        height : 200px ; 
+                        padding : 10px ; 
                       }
+                    }
+
+                    @media (max-width : 767px){
+                      .text-box {
+                        width : 200px ; 
+                        height : 100px ; 
+                        padding : 5px ; 
+                      }
+                    }
 
                       #dynamic-title {
                           font-weight: bold; /* Make title bold */
