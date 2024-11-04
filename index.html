@@ -942,58 +942,69 @@
     padding : 20px ; 
   }
 
-  @media only screen and (max-width: 1024px) {
-    .text-content h1 {
-      font-size: 100%;
-    }
+  .container {
+  width: 100%;
+  align-items: center;
+}
 
-    .text-content p {
-      font-size: 80%;
-    }
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 90px;
+}
 
-    .content-wrapper {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+.image-content,
+.text-content {
+  width: 50%;
+  text-align: left;
+}
 
-    .container {
-      width: 90%;
-      margin-left: 5%;
-    }
+.image-content img {
+  max-width: 100%;
+  height: auto;
+}
 
-    .container1,
-    .image-content {
-      margin-top: -30%;
-    }
-
-    .container1,
-    .h1 {
-      margin-top: -10%;
-    }
-
-    .container2,
-    .image-content {
-      margin-top: -30%;
-    }
-
-    .container2,
-    .h1 {
-      margin-top: -40%;
-    }
-
-    .image-content,
-    .text-content {
-      padding: 0;
-      width: 40%;
-      text-align: left;
-    }
-
-    .image-content {
-      padding-top: 20px;
-      /* Adjust padding as needed */
-    }
+@media only screen and (max-width: 1024px) {
+  .text-content h1 {
+    font-size: 24px;
   }
+
+  .text-content p {
+    font-size: 14px;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+  }
+
+  .image-content,
+  .text-content {
+    width: 80%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .container0,
+  .container1,
+  .container2,
+  .container3,
+  .container4 {
+    margin-bottom: 40px;
+  }
+
+  .container1 .image-content,
+  .container2 .image-content,
+  .container3 .image-content,
+  .container4 .image-content {
+    order: -1;
+    margin-top: 0;
+  }
+}
 </style>
 </body>
 
@@ -1006,7 +1017,7 @@
 
 
 <section id="research" class="research section">
-  <div class="container" style="width: 100%; align-items: center;">
+  <div class="container">
     <div class="row align-items-center md-wrap-reverse">
       <div class="col-lg-12">
         <div class="section-title">
@@ -1017,93 +1028,79 @@
 
         <!------------------------0th ANIMATION AND Text------------------------------------>
         <div style="padding-top:0px; padding-bottom:100px" class="container0" data-aos="fade-up" data-aos-delay="100">
-          <div style="padding-left:20%; padding-top:40px;" class="image-content">
-            <!-- Replace Lottie player with an image tag for the GIF -->
-            <img src="assets/img/RESEARCH/climate-modeling2.gif" alt="Description of the GIF"
-              style="width: 250px; height: 250px; transform: scale(1.5); border-radius: 40px;margin-top: -5%;">
-          </div>
-          <div style="padding-left:55%" class="text-content">
-            <h1 style="text-align: left; color: black;margin-top: -20%; font-size: 30px;">Climate Modeling</h1>
-            <p style="text-align: left; color: black; font-size: 17px;">For Actionable Climate Projections and Process
-              Studies</p>
+          <div class="content-wrapper">
+            <div class="image-content">
+              <img src="assets/img/RESEARCH/climate-modeling2.gif" alt="Description of the GIF" style="width: 250px; height: 250px; border-radius: 40px;">
+            </div>
+            <div class="text-content">
+              <h1 style="text-align: left; color: black; font-size: 30px;">Climate Modeling</h1>
+              <p style="text-align: left; color: black; font-size: 17px;">For Actionable Climate Projections and Process Studies</p>
+            </div>
           </div>
         </div>
-
-        <!------------------------1ST ANIMATION AND Text------------------------------------>
+  
         <div class="container1" data-aos="fade-up" data-aos-delay="200">
-          <div class="content-wrapper"
-            style="display: flex; flex-direction: row; align-items: flex-start; justify-content: space-between; padding-top: 90px;">
-            <div class="text-content" style="flex: 1; padding-left: 18%;">
-              <h1 style="text-align: left; color: black; margin-top: -10%; font-size: 30px;">Climate Projection</h1>
-              <p style="text-align: left; color: black; font-size: 17px;">For strategy making and policy formulation
-              </p>
+          <div class="content-wrapper">
+            <div class="text-content">
+              <h1 style="text-align: left; color: black; font-size: 30px;">Climate Projection</h1>
+              <p style="text-align: left; color: black; font-size: 17px;">For strategy making and policy formulation</p>
             </div>
-            <div style="padding-right:-2%;" class="image-content">
-              <img src="assets/img/RESEARCH/Climate-information.gif" alt="Future Projection GIF"
-                style="width: 220px; height: 140px; transform: scale(1.8); margin-top: -38%;">
+            <div class="image-content">
+              <img src="assets/img/RESEARCH/Climate-information.gif" alt="Future Projection GIF" style="width: 220px; height: 140px;">
             </div>
           </div>
-
-          <!------------------------2ND ANIMATION AND Text------------------------------------>
-          <div style="padding-bottom:90px" class="container2" data-aos="fade-up" data-aos-delay="100">
-            <div style="padding-left:20%; padding-top:10px;" class="image-content">
-              <!-- Replace Lottie player with an image tag for the GIF -->
-              <img src="assets/img/RESEARCH/Process.gif" alt="Description of the GIF"
-                style="width: 260px; height: 210px; transform: scale(1.5); border-radius: 40px;">
+        </div>
+  
+        <div style="padding-bottom:90px" class="container2" data-aos="fade-up" data-aos-delay="100">
+          <div class="content-wrapper">
+            <div class="image-content">
+              <img src="assets/img/RESEARCH/Process.gif" alt="Description of the GIF" style="width: 260px; height: 210px; border-radius: 40px;">
             </div>
-            <div style="padding-left:55%;" class="text-content">
-              <h1 style="text-align: left; color: black; margin-top: -15%; font-size: 30px;">Process Understanding</h1>
-              <p style="text-align: left; color: black; font-size: 17px;">To Advance the Knowledge of Climate Change
-              </p>
+            <div class="text-content">
+              <h1 style="text-align: left; color: black; font-size: 30px;">Process Understanding</h1>
+              <p style="text-align: left; color: black; font-size: 17px;">To Advance the Knowledge of Climate Change</p>
             </div>
           </div>
-
-          <!------------------------3RD ANIMATION AND Text------------------------------------>
-          <div style="padding-bottom:20px" class="container3" data-aos="fade-up" data-aos-delay="100">
-            <div style="padding-top:5%;margin-left: 20%;" class="text-content">
-              <h1 style="text-align: left;  color: black; font-size: 30px;">Climate Action </h1>
+        </div>
+  
+        <div style="padding-bottom:20px" class="container3" data-aos="fade-up" data-aos-delay="100">
+          <div class="content-wrapper">
+            <div class="text-content">
+              <h1 style="text-align: left; color: black; font-size: 30px;">Climate Action</h1>
               <p style="text-align: left; color: black; font-size: 17px;">To Combat Climate Change</p>
             </div>
-            <div style="padding-left:60%;" class="image-content">
-              <img src="assets/img/RESEARCH/policy.gif" alt="Future Projection GIF"
-                style="width: 220px; height: 130px; transform: scale(1.8); margin-top: -20%;">
+            <div class="image-content">
+              <img src="assets/img/RESEARCH/policy.gif" alt="Future Projection GIF" style="width: 220px; height: 130px;">
             </div>
           </div>
-
-          <!------------------------4th ANIMATION AND Text------------------------------------>
-          <div style="padding-top:30px; padding-bottom:100px" class="container4" data-aos="fade-up"
-            data-aos-delay="100">
-            <div style="padding-left:20%; padding-top:40px;" class="image-content">
-              <!-- Replace Lottie player with an image tag for the GIF -->
-              <img src="assets/img/RESEARCH/Decision Making.gif" alt="Description of the GIF"
-                style="width: 200px; height: 180px; transform: scale(1.5); border-radius: 40px;">
+        </div>
+  
+        <div style="padding-top:30px; padding-bottom:100px" class="container4" data-aos="fade-up" data-aos-delay="100">
+          <div class="content-wrapper">
+            <div class="image-content">
+              <img src="assets/img/RESEARCH/Decision Making.gif" alt="Description of the GIF" style="width: 200px; height: 180px; border-radius: 40px;">
             </div>
-            <div style="padding-left:55%" class="text-content">
-              <h1 style="text-align: left; color: black;margin-top: -20%; font-size: 30px;">Sequential Decision Making
-              </h1>
-              <p style="text-align: left; color: black; font-size: 17px;">For Efficient and Effective Climate Actions
-              </p>
+            <div class="text-content">
+              <h1 style="text-align: left; color: black; font-size: 30px;">Sequential Decision Making</h1>
+              <p style="text-align: left; color: black; font-size: 17px;">For Efficient and Effective Climate Actions</p>
             </div>
           </div>
-
-          <!------------------------5TH ANIMATION AND Text------------------------------------>
-          <div style="padding-bottom:30px" class="container3" data-aos="fade-up" data-aos-delay="100">
-
-            <div style="padding-left:65%;" class="image-content">
-              <img src="assets/img/RESEARCH/Fluid-mech.gif" alt="Future Projection GIF"
-                style="width: 180px; height: 130px; transform: scale(1.8); margin-top: 15%;">
+        </div>
+  
+        <div style="padding-bottom:30px" class="container5" data-aos="fade-up" data-aos-delay="100">
+          <div class="content-wrapper">
+            <div class="image-content">
+              <img src="assets/img/RESEARCH/Fluid-mech.gif" alt="Future Projection GIF" style="width: 180px; height: 130px;">
             </div>
-
-            <div style="padding-top:2%; margin-left:10% ;" class="text-content">
-              <h1 style="text-align: left; margin-top: -10%; color: black; font-size: 30px;">Fluid Mechanics and Heat
-                Transfer</h1>
-              <p style="text-align: left; color: black; font-size: 17px;">To fundamentally understand the climate system
-              </p>
+            <div class="text-content">
+              <h1 style="text-align: left; color: black; font-size: 30px;">Fluid Mechanics and Heat Transfer</h1>
+              <p style="text-align: left; color: black; font-size: 17px;">To fundamentally understand the climate system</p>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 </section>
 
 
