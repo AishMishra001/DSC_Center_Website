@@ -968,18 +968,18 @@
 
 @media (max-width: 400px) {
   .text-content h1 {
-    font-size: 24px;
+    font-size: 24px !important;
   }
 
   .text-content p {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 
   .content-wrapper {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: 20px;
   }
 
   .image-content,
@@ -1000,7 +1000,8 @@
   .container1 .image-content,
   .container2 .image-content,
   .container3 .image-content,
-  .container4 .image-content {
+  .container4 .image-content , 
+  .container5 .image-content {
     order: -1;
     margin-top: 0;
   }
@@ -1008,25 +1009,25 @@
 
 @media (min-width: 401px) and (max-width : 1023px){
   .text-content h1 {
-    font-size: 40px;
+    font-size: 40px !important;
   }
 
   .text-content p {
-    font-size: 28px;
+    font-size: 28px !important;
   }
 }
 
 @media (min-width: 1024px){
   .text-content h1 {
-    font-size: 45px;
+    font-size: 45px !important;
   }
 
   .text-content p {
-    font-size: 32px;
+    font-size: 32px !important;
   }
 
 
-.image0 {
+/* .image0 {
   width: 350px; height: 250px; border-radius: 40px;  
 }
 .image1 {
@@ -1043,8 +1044,28 @@
 }
 .image5 {
   width: 280px; height: 230px; margin-left: 60px ;
+} */
 }
+
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
 }
+
+@media (min-width: 1024px) {
+  .image-content img {
+    width: 80%; /* Adjust this as needed */
+  }
+}
+
+@media (max-width: 1023px) {
+  .image-content img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 
 </style>
 </body>
