@@ -966,7 +966,7 @@
   height: auto;
 }
 
-@media only screen and (max-width: 1024px) {
+@media (max-width: 400px) {
   .text-content h1 {
     font-size: 24px;
   }
@@ -1005,28 +1005,47 @@
     margin-top: 0;
   }
 }
-@media (min-width:1024px) {
-  
-  .image0 {
-    width: 350px; height: 250px; border-radius: 40px;  
+
+@media (min-width: 400px) and (max-width : 1023){
+  .text-content h1 {
+    font-size: 40px;
   }
-  .image1 {
-    width: 300px; height: 140px;
+
+  .text-content p {
+    font-size: 28px;
   }
-  .image2 {
-    width: 320px; height: 210px; border-radius: 40px;
-  }
-  .image3 {
-    width: 280px; height: 130px;
-  }
-  .image4 {
-    width: 200px; height: 180px; border-radius: 40px;
-  }
-  .image5 {
-    width: 280px; height: 230px;
-  }
-  
 }
+
+@media (min-width: 1024px){
+  .text-content h1 {
+    font-size: 45px;
+  }
+
+  .text-content p {
+    font-size: 32px;
+  }
+
+
+.image0 {
+  width: 350px; height: 250px; border-radius: 40px;  
+}
+.image1 {
+  width: 300px; height: 140px;
+}
+.image2 {
+  width: 320px; height: 210px; border-radius: 40px;
+}
+.image3 {
+  width: 280px; height: 130px;
+}
+.image4 {
+  width: 200px; height: 180px; border-radius: 40px;
+}
+.image5 {
+  width: 280px; height: 230px;
+}
+}
+
 </style>
 </body>
 
