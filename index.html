@@ -1747,7 +1747,7 @@
               margin-left: 33.2%; /* Adds space above the box */  
           }
           </style>
-
+screen
         <!-- Fifth Team Member of Second Row -->
         <div class="col-lg-2 col-md-6 d-flex align-items-stretch custom-box" data-aos="fade-up" data-aos-delay="500">
           <div class="team-member endElement">
@@ -1778,10 +1778,22 @@
       padding-bottom: 2%;
       background-color: rgba(246, 245, 245, 0.8);
     }
+@media (max-width : 360px ) {
+  
+  #advisory .container {
+    max-width: 100%;
+  }
 
-    #advisory .container {
-      max-width: 100%;
-    }
+}
+
+@media (min-width : 1025px ) {
+  #advisory .container {
+    max-width: 100%;
+    margin-left: 10% ;
+}
+}
+
+
 
     /* Team Member Styles */
     .team-member {
@@ -2206,6 +2218,12 @@
         color: rgb(77, 85, 151);
 
         margin-top: -5%;
+      }
+
+      @media (max-width : 360px ) {
+        #content {
+          font-size: 12px ;
+        }
       }
 
       #opportunites .logo {
