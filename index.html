@@ -235,7 +235,7 @@
         font-size: 2.7rem;
         line-height: 0.8;
         margin-left: 10%;
-        margin-top: 2%;
+        /* margin-top: 2%; */
       }
 
       .header .text span {
@@ -1459,343 +1459,298 @@
 
   <!-----------------------------------TEAM CSS------------------------------------>
   <style>
-    /* Existing styling for desktop remains as it is */
-  
-    @media (min-width : 1024px ) {
-      .team-member {
-                        width: 300px; /* Set the width of the container */
-                        height: 100px; /* Set the height to be equal to the width */
-                        align-items: center;
-                        display: flex; /* Ensure it's a flex container */
-                        flex-direction: column; /* Stack elements vertically */
-                        justify-content: center; /* Center contents vertically */
-                        text-align: center;
-                        border: 1px solid #ccc; /* Optional: Add a border to distinguish each member */
-                        margin: 0 auto; /* Optional: Center the container within its column */
-                        
-                    }
+    #leadership  {
+      padding-top: -1%;
+      padding-bottom: 2%;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
 
-                    .team-member .member-info {
-                        align-items: center;
-                        justify-content: center;   
-                    }
+    #leadership .container {
+      max-width: 100%;
+      margin-left: 8%;
+    }
 
-                    .member-info {
-                        text-align: center;
-                        margin-left:-15%;
-                    }
-
-                    .team-member .member-info h4{
-                        font-size: 15px;
-                        padding-top: 10px;
-                    }
-
-                    .team-member .member-info p{
-                        font-size: 12px;
-                        margin-top: -5px; /* Adjust this value to reduce space */
-                    }
-
-                    .member-img img {
-                        width: 150px; /* Set the width you want */
-                        height: 150px; /* Set the height to be equal to the width */
-                        object-fit: cover; /* Ensures the image covers the space without distortion */
-                        border-radius: 50%; /* Makes the image circular */
-                    }
+    #leadership .section-title {
+      margin-left: 0%;
 
     }
 
-
-    /* Adjust for tablet screens */
-    @media (min-width:769px) and (max-width: 1023px) {
-      #leadership .container {
-        margin-left: 4%; /* reduce side margin for better fit */
-      }
-  
-      .team-member {
-        width: 80%;
-        /* Adjust width for tablet */
-        height: auto;
-        /* Adjust height to accommodate text on smaller screens */
-        margin: 0 auto;
-        /* Center-align team members */
-        padding: 20px;
-        /* Add padding for better spacing */
-      }
-  
-      .team-member .member-info h4 {
-        font-size: 16px;
-      }
-  
-      .team-member .member-info p {
-        font-size: 13px;
-        /* Make text more readable on smaller screens */
-      }
-  
-      .custom-box {
-        margin-left: auto;
-        /* Remove custom left margin to center-align the element on smaller screens */
-      }
+    .team-member {
+        width: 300px; /* Set the width of the container */
+        height: 100px; /* Set the height to be equal to the width */
+        align-items: center;
+        display: flex; /* Ensure it's a flex container */
+        flex-direction: column; /* Stack elements vertically */
+        justify-content: center; /* Center contents vertically */
+        text-align: center;
+        border: 1px solid #ccc; /* Optional: Add a border to distinguish each member */
+        margin: 0 auto; /* Optional: Center the container within its column */
+        
     }
-  
-    /* Adjust for mobile screens */
-    @media (max-width: 768px) {
-      #leadership .container {
-        margin-left: 0;
-        /* Remove left margin on mobile */
-      }
-  
-      .team-member {
-        width: 100%;
-        /* Full width for mobile */
-        height: auto;
-        padding: 15px;
-        /* Add padding for better spacing */
-        margin-bottom: 15px;
-        /* Add spacing between members */
-      }
-  
-      .member-img img {
-        width: 100px;
-        height: 100px;
-        /* Adjust image size on mobile */
-      }
-  
-      .team-member .member-info h4 {
-        font-size: 14px;
-        /* Adjust font size for readability */
-      }
-  
-      .team-member .member-info p {
+
+    .team-member .member-info {
+        align-items: center;
+        justify-content: center;   
+    }
+
+    .member-info {
+        text-align: center;
+        margin-left:-15%;
+    }
+
+    .team-member .member-info h4{
+        font-size: 15px;
+        padding-top: 10px;
+    }
+
+    .team-member .member-info p{
         font-size: 12px;
-        margin-top: 0;
-        /* Adjust text for smaller screens */
-      }
-  
-      .website-box {
+        margin-top: -5px; /* Adjust this value to reduce space */
+    }
+
+    .member-img img {
+        width: 150px; /* Set the width you want */
+        height: 150px; /* Set the height to be equal to the width */
+        object-fit: cover; /* Ensures the image covers the space without distortion */
+        border-radius: 50%; /* Makes the image circular */
+    }
+
+    .website-box {
         margin-top: 5px;
-      }
     }
 
-    @media (max-width : 360px ) {
-      .lastone {
-        right : 110px ; 
-      }
+
+    @media (max-width: 1024px) {
+                
+    .team-member {
+          width: 300px; /* Set the width of the container */
+          height: 100px; /* Set the height to be equal to the width */
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          border: 1px solid #ccc; /* Optional: Add a border to distinguish each member */
+          margin: 0 auto; /* Optional: Center the container within its column */
+          margin-left: 20%;
     }
-  </style>
+
+    }
+
+</style>
+
+
+<section id="leadership" class="team section">
+<!-- Section Title -->
+<div class="container section-title" data-aos="fade-up">
+<h2 style="margin-top:4% ; margin-bottom:-1%; color: #011e24;">Leadership</h2>
+</div><!-- End Section Title -->
+
+<div class="container" style="margin-top: 0%;">
+
+<div class="row gy-4">
+<!-- First Row -->
+<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+<div class="team-member">
+<div class="member-img">
+  <img src="assets/img/team/CO-PI/amitabh.jpg" class="img-fluid" alt="">
+</div>
+<div class="member-info">
+  <h4>Prof. Amitabh BHATTACHARYA</h4>
+  <p>Department of Applied Mechanics,<br> IIT Delhi</p><br>
   
+  <div class="website-box">
+    <a href="https://sites.google.com/site/amitabhresearch" target="_blank">Webpage</a>
+  </div>
+</div>
+</div>
+</div><!-- End Team Member -->
+<!-- Repeat above block for each team member in the first row -->
 
-  <section id="leadership" class="team section">
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <h2 style="margin-top:4% ; margin-bottom:-1%; color: #011e24;">Leadership</h2>
-    </div><!-- End Section Title -->
+<!-- Second Team Member -->
+<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+<div class="team-member">
+<div class="member-img">
+  <img src="assets/img/team/CO-PI/tanmoy.png" class="img-fluid" alt="">
+</div>
+<div class="member-info">
+  <h4>Prof. Tanmoy CHAKRABORTY</h4>
+    <p>Department of Electrical Engineering,<br> IIT Delhi</p><br>
+    
+    <div class="website-box">
+      <a href="https://www.tanmoychak.com/" target="_blank">Webpage</a>
+    </div>
+</div>
+</div>
+</div><!-- End Team Member -->
 
-    <div class="container" style="margin-top: 0%;">
+<!-- Third Team Member -->
+<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+<div class="team-member">
+<div class="member-img">
+  <img src="assets/img/team/CO-PI/vamsi.jpg" class="img-fluid" alt="">
+</div>
+<div class="member-info">
+  <h4>Prof. Vamsi. K. CHALAMALLA</h4>
+  <p>Department of Applied Mechanics,<br> IIT Delhi</p><br>
+  
+  <div class="website-box">
+      <a href="https://sites.google.com/site/vkchalama/" target="_blank">Webpage</a>
+  </div>
+</div>
+</div>
+</div><!-- End Team Member -->
 
-      <div class="row gy-4">
-        <!-- First Row -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-          <div class="team-member">
-            <div class="member-img">
-              <img src="assets/img/team/CO-PI/amitabh.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="member-info">
-              <h4>Prof. Amitabh BHATTACHARYA</h4>
-              <p>Department of Applied Mechanics,<br> IIT Delhi</p><br>
+<!-- Fourth Team Member -->
+<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+<div class="team-member">
+<div class="member-img">
+  <img src="assets/img/team/CO-PI/amlendu_d.jpg" class="img-fluid" alt="">
+</div>
+<div class="member-info">
+  <h4>Prof. Amlendu K. DUBEY</h4>
+  <p>Department of Management Studies,<br> IIT Delhi</p><br>
+  
+  <div class="website-box">
+      <a href="http://dms.iitd.ac.in/faculity_type/prof-amlendu-kumar-dubey/" target="_blank">Webpage</a>
+  </div>
+</div>
+</div>
+</div><!-- End Team Member -->
 
-              <div class="website-box">
-                <a href="https://sites.google.com/site/amitabhresearch" target="_blank">Webpage</a>
-              </div>
-            </div>
-          </div>
-        </div><!-- End Team Member -->
-        <!-- Repeat above block for each team member in the first row -->
+<!-- Fifth Team Member -->
+<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+<div class="team-member">
+<div class="member-img">
+  <img src="assets/img/team/CO-PI/skm_new.jpg" class="img-fluid" alt="">
+</div>
+<div class="member-info">
+  <h4>Prof. Saroj K. MISHRA</h4>
+<p>Centre for Atmospheric Sciences,<br> IIT Delhi</p><br>
 
-        <!-- Second Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-          <div class="team-member">
-            <div class="member-img">
-              <img src="assets/img/team/CO-PI/tanmoy.png" class="img-fluid" alt="">
-            </div>
-            <div class="member-info">
-              <h4>Prof. Tanmoy CHAKRABORTY</h4>
-              <p>Department of Electrical Engineering,<br> IIT Delhi</p><br>
+<div class="website-box">
+    <a href="https://dcecm.iitd.ac.in/skm/website/" target="_blank">Webpage</a>
+</div>
+</div>
+</div>
+</div><!-- End Team Member -->
+</div>
 
-              <div class="website-box">
-                <a href="https://www.tanmoychak.com/" target="_blank">Webpage</a>
-              </div>
-            </div>
-          </div>
-        </div><!-- End Team Member -->
+<!-- Second Row -->
+<div class="row gy-4 mt-4">
+<!-- Add new team members for the second row here -->
+<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+<div class="team-member">
+<div class="member-img">
+  <img src="assets/images/team/prashant.jpg" class="img-fluid" alt="">
+</div>
+<div class="member-info">
+  <h4>Prof. Prashant PALKAR</h4>
+  <p>Department of Mechanical Engineering,<br> IIT Delhi</p><br>
+  
+  <div class="website-box">
+      <a href="https://mech.iitd.ac.in/content/prashant-palkar" target="_blank">Webpage</a>
+  </div>
+</div>
+</div>
+</div><!-- End Team Member -->
 
-        <!-- Third Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-          <div class="team-member">
-            <div class="member-img">
-              <img src="assets/img/team/CO-PI/vamsi.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="member-info">
-              <h4>Prof. Vamsi. K. CHALAMALLA</h4>
-              <p>Department of Applied Mechanics,<br> IIT Delhi</p><br>
+<!-- Repeat similar blocks for team members 2-5 of the second row -->
 
-              <div class="website-box">
-                <a href="https://sites.google.com/site/vkchalama/" target="_blank">Webpage</a>
-              </div>
-            </div>
-          </div>
-        </div><!-- End Team Member -->
+<!-- Second Team Member of Second Row -->
+<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+<div class="team-member">
+<div class="member-img">
+  <img src="assets/img/team/CO-PI/panigrahi1.jpg" class="img-fluid" alt="">
+</div>
+<div class="member-info">
+  <h4>Prof. Bijaya K. PANIGRAHI</h4>
+  <p>Department of Electrical Engineering,<br> IIT Delhi</p><br>
 
-        <!-- Fourth Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-          <div class="team-member">
-            <div class="member-img">
-              <img src="assets/img/team/CO-PI/amlendu_d.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="member-info">
-              <h4>Prof. Amlendu K. DUBEY</h4>
-              <p>Department of Management Studies,<br> IIT Delhi</p><br>
+  <div class="website-box">
+      <a href="http://ctech.iitd.ac.in/bkpanigrahi.html" target="_blank">Webpage</a>
+  </div>
+</div>
+</div>
+</div><!-- End Team Member -->
 
-              <div class="website-box">
-                <a href="http://dms.iitd.ac.in/faculity_type/prof-amlendu-kumar-dubey/" target="_blank">Webpage</a>
-              </div>
-            </div>
-          </div>
-        </div><!-- End Team Member -->
+<!-- Third Team Member of Second Row -->
+<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+<div class="team-member">
+<div class="member-img">
+  <img src="assets/img/team/CO-PI/mathilis.jpg" class="img-fluid" alt="">
+</div>
+<div class="member-info">
+  <h4>Dr. Maithali SHARAN</h4>
+  <p> INSA Senior Scientist</p><br>
+  
+  <div class="website-box">
+      <a href="http://web.iitd.ac.in/~mathilis/" target="_blank">Webpage</a>
+  </div>
+</div>
+</div>
+</div><!-- End Team Member -->
 
-        <!-- Fifth Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
-          <div class="team-member">
-            <div class="member-img">
-              <img src="assets/img/team/CO-PI/skm_new.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="member-info">
-              <h4>Prof. Saroj K. MISHRA</h4>
-              <p>Centre for Atmospheric Sciences,<br> IIT Delhi</p><br>
+<!-- Fourth Team Member of Second Row -->
+<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+<div class="team-member">
+<div class="member-img">
+  <img src="assets/img/team/shaurya.jpg" class="img-fluid" alt="">
+</div>
+<div class="member-info">
+  <h4>Prof. Shaurya SHRIYAM</h4>
+  <p>Department of Mechanical Engineering,<br> IIT Delhi</p><br>
 
-              <div class="website-box">
-                <a href="https://dcecm.iitd.ac.in/skm/website/" target="_blank">Webpage</a>
-              </div>
-            </div>
-          </div>
-        </div><!-- End Team Member -->
-      </div>
+  <div class="website-box">
+      <a href="https://web.iitd.ac.in/~shriyam/index.html" target="_blank">Webpage</a>
+  </div>
+</div>
+</div>
+</div><!-- End Team Member -->
 
-      <!-- Second Row -->
-      <div class="row gy-4 mt-4">
-        <!-- Add new team members for the second row here -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-          <div class="team-member">
-            <div class="member-img">
-              <img src="assets/images/team/prashant.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="member-info">
-              <h4>Prof. Prashant PALKAR</h4>
-              <p>Department of Mechanical Engineering,<br> IIT Delhi</p><br>
-
-              <div class="website-box">
-                <a href="https://mech.iitd.ac.in/content/prashant-palkar" target="_blank">Webpage</a>
-              </div>
-            </div>
-          </div>
-        </div><!-- End Team Member -->
-
-        <!-- Repeat similar blocks for team members 2-5 of the second row -->
-
-        <!-- Second Team Member of Second Row -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-          <div class="team-member">
-            <div class="member-img">
-              <img src="assets/img/team/CO-PI/panigrahi1.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="member-info">
-              <h4>Prof. Bijaya K. PANIGRAHI</h4>
-              <p>Department of Electrical Engineering,<br> IIT Delhi</p><br>
-
-              <div class="website-box">
-                <a href="http://ctech.iitd.ac.in/bkpanigrahi.html" target="_blank">Webpage</a>
-              </div>
-            </div>
-          </div>
-        </div><!-- End Team Member -->
-
-        <!-- Third Team Member of Second Row -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-          <div class="team-member">
-            <div class="member-img">
-              <img src="assets/img/team/CO-PI/mathilis.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="member-info">
-              <h4>Dr. Maithali SHARAN</h4>
-              <p> INSA Senior Scientist</p><br>
-
-              <div class="website-box">
-                <a href="http://web.iitd.ac.in/~mathilis/" target="_blank">Webpage</a>
-              </div>
-            </div>
-          </div>
-        </div><!-- End Team Member -->
-
-        <!-- Fourth Team Member of Second Row -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-          <div class="team-member">
-            <div class="member-img">
-              <img src="assets/img/team/shaurya.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="member-info">
-              <h4>Prof. Shaurya SHRIYAM</h4>
-              <p>Department of Mechanical Engineering,<br> IIT Delhi</p><br>
-
-              <div class="website-box">
-                <a href="https://web.iitd.ac.in/~shriyam/index.html" target="_blank">Webpage</a>
-              </div>
-            </div>
-          </div>
-        </div><!-- End Team Member -->
-
-        <!-- Fifth Team Member of Second Row -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
-          <div class="team-member">
-            <div class="member-img">
-              <img src="assets/img/team/CO-PI/sawan_new1.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="member-info">
-              <h4>Prof. Sawan S. SINHA</h4>
-              <p>Department of Applied Mechanics,<br> IIT Delhi</p><br>
-              <div class="website-box">
-                <a href="https://sites.google.com/view/sawanssinharesearchteaching/home" target="_blank">Webpage</a>
-              </div>
-            </div>
-          </div>
-        </div><!-- End Team Member -->
+<!-- Fifth Team Member of Second Row -->
+<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+<div class="team-member">
+<div class="member-img">
+  <img src="assets/img/team/CO-PI/sawan_new1.jpg" class="img-fluid" alt="">
+</div>
+<div class="member-info">
+  <h4>Prof. Sawan S. SINHA</h4>
+  <p>Department of Applied Mechanics,<br> IIT Delhi</p><br>
+        <div class="website-box">
+            <a href="https://sites.google.com/view/sawanssinharesearchteaching/home" target="_blank">Webpage</a>
+        </div>
+</div>
+</div>
+</div><!-- End Team Member -->
 
 
-        <!--USE CUSTOM BOD=X TO ADJUST THE BOXES LEFT RIGHT-->
+<!--USE CUSTOM BOD=X TO ADJUST THE BOXES LEFT RIGHT-->
 
         <style>
           .custom-box {
-            margin-left: 33.2%;
-            /* Adds space above the box */
+              margin-left: 33.2%; /* Adds space above the box */  
           }
-        </style>
+          </style>
 
         <!-- Fifth Team Member of Second Row -->
         <div class="col-lg-2 col-md-6 d-flex align-items-stretch custom-box" data-aos="fade-up" data-aos-delay="500">
-          <div class="team-member lastone">
+          <div class="team-member">
             <div class="member-img">
               <img src="assets/img/team/CO-PI/Amber.jpg" class="img-fluid" alt="">
             </div>
             <div class="member-info">
               <h4>Prof. Amber SRIVASTAVA</h4>
               <p>Department of Mechanical Engineering,<br> IIT Delhi</p><br>
-              <div class="website-box">
-                <a href="https://asrivastava93.github.io/index.html" target="_blank">Webpage</a>
-              </div>
+                    <div class="website-box">
+                        <a href="https://asrivastava93.github.io/index.html" target="_blank">Webpage</a>
+                    </div>
             </div>
           </div>
         </div><!-- End Team Member -->
-      </div>
-    </div>
-  </section>
+</div>
+</div>
+</section>
 
 
   <!-----------------------------------------------------ADVISORY BOARD------------------------------>
