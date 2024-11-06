@@ -1461,6 +1461,50 @@
   <style>
     /* Existing styling for desktop remains as it is */
   
+    @media (min-width : 1024px ) {
+      .team-member {
+                        width: 300px; /* Set the width of the container */
+                        height: 100px; /* Set the height to be equal to the width */
+                        align-items: center;
+                        display: flex; /* Ensure it's a flex container */
+                        flex-direction: column; /* Stack elements vertically */
+                        justify-content: center; /* Center contents vertically */
+                        text-align: center;
+                        border: 1px solid #ccc; /* Optional: Add a border to distinguish each member */
+                        margin: 0 auto; /* Optional: Center the container within its column */
+                        
+                    }
+
+                    .team-member .member-info {
+                        align-items: center;
+                        justify-content: center;   
+                    }
+
+                    .member-info {
+                        text-align: center;
+                        margin-left:-15%;
+                    }
+
+                    .team-member .member-info h4{
+                        font-size: 15px;
+                        padding-top: 10px;
+                    }
+
+                    .team-member .member-info p{
+                        font-size: 12px;
+                        margin-top: -5px; /* Adjust this value to reduce space */
+                    }
+
+                    .member-img img {
+                        width: 150px; /* Set the width you want */
+                        height: 150px; /* Set the height to be equal to the width */
+                        object-fit: cover; /* Ensures the image covers the space without distortion */
+                        border-radius: 50%; /* Makes the image circular */
+                    }
+
+    }
+
+
     /* Adjust for tablet screens */
     @media (max-width: 1024px) {
       #leadership .container {
