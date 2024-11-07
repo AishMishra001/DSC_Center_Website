@@ -1470,21 +1470,34 @@
       padding-bottom: 2%;
       background-color: rgba(255, 255, 255, 0.8);
     }
-  @media (max-width : 1019px) {
 
     #leadership .container {
-      max-width: 100%;
-      margin-left: 0%;
+      display: grip ; 
+      gap : 1rem ; 
     }
-  }
 
-  @media (min-width : 1020px) {
-    #leadership .container {
-      margin-left: 10% ; 
-      max-width: 100% ;
-    }
+    /* Laptop view: 5 members per row */
+@media (min-width: 1024px) {
+  #leadership .container{
+    grid-template-columns: repeat(5, 1fr);
   }
+}
 
+/* Tablet view: 2 members per row */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #leadership .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+/* Mobile view: 1 member per row */
+@media (max-width: 767px) {
+  #leadership .container{
+    grid-template-columns: 1fr;
+  }
+}
+  
 
     #leadership .section-title {
       margin-left: 0%;
@@ -1552,19 +1565,6 @@
           margin-left: 20%;
     }
   }
-  @media (max-width: 379px) {
-    .endElement{
-      
-      right: 110px ;
-    }
-  }
-
-  @media (min-width: 380px) and (max-width : 1023px ) {
-    .endElement{
-       
-       right : 190px ; 
-    }
-  }
 
 </style>
 
@@ -1577,9 +1577,10 @@
 
 <div class="container" style="margin-top: 0%;">
 
-<div class="row gy-4">
-<!-- First Row -->
-<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+               <!-- 1st element  -->
+
+            
+
 <div class="team-member">
 <div class="member-img">
   <img src="assets/img/team/CO-PI/amitabh.jpg" class="img-fluid" alt="">
@@ -1592,12 +1593,9 @@
     <a href="https://sites.google.com/site/amitabhresearch" target="_blank">Webpage</a>
   </div>
 </div>
-</div>
 </div><!-- End Team Member -->
-<!-- Repeat above block for each team member in the first row -->
+               <!-- 2st element  -->
 
-<!-- Second Team Member -->
-<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
 <div class="team-member">
 <div class="member-img">
   <img src="assets/img/team/CO-PI/tanmoy.png" class="img-fluid" alt="">
@@ -1611,10 +1609,9 @@
     </div>
 </div>
 </div>
-</div><!-- End Team Member -->
 
-<!-- Third Team Member -->
-<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+               <!-- 3st element  -->
+
 <div class="team-member">
 <div class="member-img">
   <img src="assets/img/team/CO-PI/vamsi.jpg" class="img-fluid" alt="">
@@ -1628,10 +1625,9 @@
   </div>
 </div>
 </div>
-</div><!-- End Team Member -->
 
-<!-- Fourth Team Member -->
-<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+               <!-- 4st element  -->
+
 <div class="team-member">
 <div class="member-img">
   <img src="assets/img/team/CO-PI/amlendu_d.jpg" class="img-fluid" alt="">
@@ -1645,10 +1641,8 @@
   </div>
 </div>
 </div>
-</div><!-- End Team Member -->
 
-<!-- Fifth Team Member -->
-<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+               <!-- 5st element  -->
 <div class="team-member">
 <div class="member-img">
   <img src="assets/img/team/CO-PI/skm_new.jpg" class="img-fluid" alt="">
@@ -1662,13 +1656,10 @@
 </div>
 </div>
 </div>
-</div><!-- End Team Member -->
-</div>
 
-<!-- Second Row -->
-<div class="row gy-4 mt-4">
-<!-- Add new team members for the second row here -->
-<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+
+               <!-- 6st element  -->
+             
 <div class="team-member">
 <div class="member-img">
   <img src="assets/images/team/prashant.jpg" class="img-fluid" alt="">
@@ -1682,12 +1673,9 @@
   </div>
 </div>
 </div>
-</div><!-- End Team Member -->
 
-<!-- Repeat similar blocks for team members 2-5 of the second row -->
+               <!-- 7st element  -->
 
-<!-- Second Team Member of Second Row -->
-<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
 <div class="team-member">
 <div class="member-img">
   <img src="assets/img/team/CO-PI/panigrahi1.jpg" class="img-fluid" alt="">
@@ -1701,10 +1689,9 @@
   </div>
 </div>
 </div>
-</div><!-- End Team Member -->
 
-<!-- Third Team Member of Second Row -->
-<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+               <!-- 8st element  -->
+
 <div class="team-member">
 <div class="member-img">
   <img src="assets/img/team/CO-PI/mathilis.jpg" class="img-fluid" alt="">
@@ -1718,10 +1705,9 @@
   </div>
 </div>
 </div>
-</div><!-- End Team Member -->
 
-<!-- Fourth Team Member of Second Row -->
-<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+               <!-- 9st element  -->
+
 <div class="team-member">
 <div class="member-img">
   <img src="assets/img/team/shaurya.jpg" class="img-fluid" alt="">
@@ -1735,10 +1721,9 @@
   </div>
 </div>
 </div>
-</div><!-- End Team Member -->
 
-<!-- Fifth Team Member of Second Row -->
-<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+               <!-- 10st element  -->
+
 <div class="team-member">
 <div class="member-img">
   <img src="assets/img/team/CO-PI/sawan_new1.jpg" class="img-fluid" alt="">
@@ -1751,31 +1736,33 @@
         </div>
 </div>
 </div>
-</div><!-- End Team Member -->
+
+</div>
 
 
-<!--USE CUSTOM BOD=X TO ADJUST THE BOXES LEFT RIGHT-->
+<div style="margin-top: 1rem;">
+               <!-- 11st element  -->
+
+  <div class="team-member endElement">
+    <div class="member-img">
+      <img src="assets/img/team/CO-PI/Amber.jpg" class="img-fluid" alt="">
+    </div>
+    <div class="member-info">
+      <h4>Prof. Amber SRIVASTAVA</h4>
+      <p>Department of Mechanical Engineering,<br> IIT Delhi</p><br>
+            <div class="website-box">
+                <a href="https://asrivastava93.github.io/index.html" target="_blank">Webpage</a>
+            </div>
+    </div>
+  </div>
+
+</div>
 
         <style>
           .custom-box {
               margin-left: 33.2%; /* Adds space above the box */  
           }
           </style>
-        <!-- Fifth Team Member of Second Row -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch custom-box" data-aos="fade-up" data-aos-delay="500">
-          <div class="team-member endElement">
-            <div class="member-img">
-              <img src="assets/img/team/CO-PI/Amber.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="member-info">
-              <h4>Prof. Amber SRIVASTAVA</h4>
-              <p>Department of Mechanical Engineering,<br> IIT Delhi</p><br>
-                    <div class="website-box">
-                        <a href="https://asrivastava93.github.io/index.html" target="_blank">Webpage</a>
-                    </div>
-            </div>
-          </div>
-        </div><!-- End Team Member -->
 </div>
 </div>
 </section>
