@@ -332,7 +332,6 @@
     @media (min-width: 1024px) {
       .text-box {
         width: 600px;
-        height: 340px;
         padding: 20px;
         background-color: rgba(200, 252, 255, 0.5);
         border-radius: 10px;
@@ -538,14 +537,15 @@
         <a href="#" id="paragraph-link" target="_blank" style="text-decoration: none; color: inherit;"></a>
       </p>
       <p id="dynamic-journal" style="text-align: left;"></p> <!-- New line for journal name -->
-      <div style="margin-top: 20px;">
-        <button id="prev-button" style="margin-right: 10px;"></button>
-        <button id="next-button"></button>
-      </div>
-
+      
       <!-- Image section to represent each title -->
-      <a id="dynamic-image-link" href="" target="_blank">
+      <a id="dynamic-image-link" href="" target="_blank" style="display: flex ; justify-items: space-between ; align-items: center ;">
         <img id="dynamic-image" src="" alt="Dynamic Image" style="width: 50%; height: auto; margin-top: 20px;" />
+        <div style="margin-top: 20px;">
+          <button id="prev-button" style="margin-right: 10px;"></button>
+          <button id="next-button"></button>
+        </div>
+
       </a>
 
     </div>
