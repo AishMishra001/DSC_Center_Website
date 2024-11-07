@@ -1745,7 +1745,7 @@
 </div>
 
 
-<div class="containerC" style="margin-top: 1rem;">
+<div class="containerC" style="margin-top: 2rem;">
                <!-- 11st element  -->
 
   <div class="team-member endElement" data-aos="fade-up" data-aos-delay="1100">
@@ -1783,19 +1783,26 @@
       padding-bottom: 2%;
       background-color: rgba(246, 245, 245, 0.8);
     }
-@media (max-width : 360px ) {
-  
-  #advisory .container {
-    max-width: 100%;
+    @media (min-width: 1024px) {
+  #leadership .container{
+    grid-template-columns: repeat(4, 1fr);
+    margin-left : 130px ; 
   }
-
 }
 
-@media (min-width : 1025px ) {
-  #advisory .container {
-    max-width: 100%;
-    margin-left: 10% ;
+/* Tablet view: 2 members per row */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #leadership .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
 }
+
+/* Mobile view: 1 member per row */
+@media (max-width: 767px) {
+  #leadership .container{
+    grid-template-columns: 1fr
+  }
 }
 
 
@@ -1891,9 +1898,7 @@
     </div><!-- End Section Title -->
 
     <div class="container" style="margin-top: 0%">
-      <div class="row gy-4 mt-4">
-        <!-- First Team Member of Third Row -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+        <!-- 1st element  -->
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/KrishnaAchutaRao.jpg" class="img-fluid" alt="Member 1">
@@ -1906,11 +1911,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <!-- Repeat above block for each team member in the first row -->
 
-        <!-- Second Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+        <!-- 2nd element -->
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/swadhin_behera.jpg" class="img-fluid" alt="Member 1">
@@ -1923,10 +1925,8 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Third Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+        <!--3rd element -->
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/nareshb.jpg" class="img-fluid" alt="Member 1">
@@ -1939,10 +1939,8 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Fourth Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+        <!-- 4th element -->
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/skdash.jpg" class="img-fluid" alt="Member 1">
@@ -1955,10 +1953,8 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Fifth Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+        <!--5th element -->
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/fasullo_john.jpg" class="img-fluid" alt="Member 1">
@@ -1972,13 +1968,10 @@
             </div>
           </div>
         </div>
-      </div>
 
 
 
-      <div class="row gy-4 mt-4">
-        <!-- First Team Member of Third Row -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+        <!--6th element  -->
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/Gullies.jpg" class="img-fluid" alt="Member 1">
@@ -1991,11 +1984,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <!-- Repeat above block for each team member in the first row -->
 
-        <!-- Second Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+        <!-- 7th element -->
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/hoteit.jpg" class="img-fluid" alt="Member 1">
@@ -2008,10 +1998,8 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Third Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+        <!--8th element  -->
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/kang.jpg" class="img-fluid" alt="Member 1">
@@ -2024,10 +2012,8 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Fourth Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+        <!--9th element -->
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/skm_new.jpg" class="img-fluid" alt="Member 1">
@@ -2040,10 +2026,8 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Fifth Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+        <!--10th element -->
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/sukumar.jpg" class="img-fluid" alt="Member 1">
@@ -2056,13 +2040,9 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
 
-      <div class="row gy-4 mt-4">
-        <!-- First Team Member of Third Row -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+        <!--11th element -->
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/Negi.jpg" class="img-fluid" alt="Member 1">
@@ -2076,11 +2056,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <!-- Repeat above block for each team member in the first row -->
 
-        <!-- Second Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+        <!--12th element -->
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/balajirajagopalan.png" class="img-fluid" alt="Member 1">
@@ -2094,10 +2071,8 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Third Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+        <!--13th element -->
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/SBR.jpg" class="img-fluid" alt="Member 1">
@@ -2110,10 +2085,8 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Fourth Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+        <!--14th element  -->
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/sandeep.jpg" class="img-fluid" alt="Member 1">
@@ -2126,10 +2099,8 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Fifth Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+        <!--15th element -->
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/frank.jpg" class="img-fluid" alt="Member 1">
@@ -2142,25 +2113,8 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-
-
-      <!--USE CUSTOM BOD=X TO ADJUST THE BOXES LEFT RIGHT-->
-
-      <style>
-        .custom-box {
-          margin-left: 33.2%;
-          /* Adds space above the box */
-        }
-      </style>
-
-
-
-      <div class="row gy-4 mt-4 justify-content-left">
-        <!-- First Team Member of Third Row -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch custom-box" data-aos="fade-up" data-aos-delay="100">
+        <!--16th element -->
           <div class="team-member endElement2">
             <div class="member-img">
               <img src="assets/images/team/tribbia.jpg" class="img-fluid" alt="Member 1">
@@ -2173,13 +2127,11 @@
               </div>
             </div>
           </div>
-        </div>
 
 
 
 
 
-      </div>
     </div>
   </section>
 
