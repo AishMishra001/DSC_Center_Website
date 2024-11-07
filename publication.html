@@ -275,7 +275,7 @@
     }
 
     /* Mobile */
-    @media (max-width: 767px) {
+    @media (min-width : 410px) and (max-width: 767px) {
       .header {
         padding: 10px;
       }
@@ -292,6 +292,14 @@
 
       .text-change{
         font-size : 1.1rem ; 
+      }
+    }
+
+    @media (max-width : 409px ) {
+      .text-change
+      {
+
+        font-size : 0.8rem ;
       }
     }
   </style>
