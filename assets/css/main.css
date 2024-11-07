@@ -1434,9 +1434,6 @@ section,
   transform: translateY(-10px);
 }
 
-.team .team-member .member-info {
-  padding-left: 30px;
-}
 
 @media (max-width: 468px) {
   .team .team-member .member-info {
