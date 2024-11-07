@@ -72,13 +72,20 @@
 
     #navmenu {
       display: flex;
-      justify-content: left;
+      justify-content: flex-start;
       margin-top: 1%;
-      margin-left: 9%;
+      margin-left: -0.75%;
     }
 
     #navmenu ul {
-      display: flex;
+      display: hidden ;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #navmenu ul li {
+      margin-right: 1rem;
     }
 
     @font-face {
@@ -92,8 +99,58 @@
       font-weight: bold;
       font-family: 'Bitter', sans-serif;
       font-size: 1.1rem;
+      text-decoration: none;
     }
 
+
+    /* Desktop */
+    @media (min-width: 1024px) {
+      #navmenu ul li a {
+        font-size: 1.1rem;
+      }
+    }
+
+    /* Tablet */
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #navmenu ul li a {
+        font-size: 1rem;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 1200px) {
+
+      /* Hide the nav menu initially on mobile */
+      #navmenu ul {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #011e24;
+        padding: 1rem 0;
+        z-index: 1000;
+        text-align: center;
+      }
+
+      #navmenu ul li {
+        margin: 1rem 0;
+      }
+
+      #navmenu ul li a {
+        font-size: 1.2rem;
+      }
+
+      /* Show the menu when open class is added */
+      #navmenu.open ul {
+        display: flex;
+        gap: 4px;
+      }
+
+      @media (min-width : 1024px) {}
+
+    }
     .mobile-nav-toggle {
       font-size: 2rem;
       cursor: pointer;
@@ -102,20 +159,21 @@
 
 
 
-    #home {
+  #home {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       min-height: 100vh;
       color: rgb(226, 242, 244);
-      
-      padding-top: 50px; /* Adjust this value to be at least the height of your header */
 
-      text-align: center;
-      background-color: rgb(255, 255, 255); /* Light blue color */
-      padding: 20px; /* Adding some padding for better appearance */
+
+      background-color: rgb(255, 255, 255);
+      /* Light blue color */
+      padding: 20px;
+      /* Adding some padding for better appearance */
     }
+
 
 
 
@@ -140,6 +198,98 @@
             font-style: normal;
         }
 
+  
+    /* Header Styles */
+    .header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-color: transparent;
+      text-align: center;
+      transition: all 0.3s;
+      z-index: 1000;
+      padding: 20px;
+    }
+
+    /* Hamburger Icon for Mobile */
+    .hamburger {
+      display: block;
+      font-size: 1.7rem;
+      color: #c6f5fa;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1001;
+    }
+
+    @media (min-width : 1200px ) {
+      .hamburger {
+        display: none ;
+      }
+    }
+
+    .header-top h1 {
+      color: #c6f5fa;
+      font-family: 'AllrounderAntiqua', serif;
+    }
+
+
+    .header.scrolled {
+      background-color: #011e24;
+      /* Background color on scroll */
+    }
+
+    .header .text {
+      color: #c6f5fa;
+      margin: 0 auto;
+      font-family: 'AllrounderAntiqua', serif;
+    }
+
+    /* Desktop */
+    @media (min-width: 1024px) {
+      .header .text {
+        font-size: 2.7rem;
+        line-height: 0.8;
+        margin-left: 10%;
+        /* margin-top: 2%; */
+      }
+
+      .header .text span {
+        font-size: 2rem;
+      }
+    }
+
+    /* Tablet */
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .header .text {
+        font-size: 2.2rem;
+        margin-left: 5%;
+        margin-top: 1.5%;
+      }
+
+      .header .text span {
+        font-size: 1.6rem;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+      .header {
+        padding: 10px;
+      }
+
+      .header .text {
+        font-size: 1.2rem;
+        margin-left: 2%;
+        margin-top: 1%;
+      }
+
+      .header .text span {
+        font-size: 1rem;
+      }
+    }
   </style>
 
 </head>
@@ -149,31 +299,35 @@
 <body class="index-page">
   <header id="header" class="header fixed-top">
     <div class="header-top">
-
-
-      <h1 class="text" style="color: #c6f5fa; margin-left: 10%; margin-top: 2%; font-size: 2.7rem; line-height: 0.8; font-family: 'AllrounderAntiqua', serif; ">
+      <h1 class="text">
         DST Centre of Excellence for Climate Information <br>
-        <span style="font-size: 1.8rem; font-family: 'AllrounderAntiqua', serif; "> Indian Institute of Technology Delhi </span>
-    </h1>
-   
+        <span>Indian Institute of Technology Delhi</span>
+
+
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <!-------------------NAVIGATION------------------------>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li class="current"><a href="#home" class="smoothscroll nav-links">Home</a></li>
+            <li><a href="#about" class="smoothscroll nav-links">About</a></li>
+            <li><a href="#research" class="smoothscroll nav-links">Research</a></li>
+            <li><a href="#publications" class="smoothscroll nav-links">Publications</a></li>
+            <li><a href="#leadership" class="smoothscroll nav-links">Leadership</a></li>
+            <li><a href="#advisory" class="smoothscroll nav-links">Advisors</a></li>
+            <li><a href="#opportunites" class="smoothscroll nav-links">Opportunities</a></li>
+            <li><a href="#contact" class="smoothscroll nav-links">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </h1>
+
     </div>
 
-<!-------------------NAVIGATION------------------------>
 
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li class="current"><a href="index.html#home" class="smoothscroll">Home</a></li>
-        <li><a href="index.html#about" class="smoothscroll">About</a></li>
-        <li><a href="index.html#research" class="smoothscroll">Research</a></li>
-        <li><a href="index.html#publications" class="smoothscroll">Publications</a></li>
-        <li><a href="index.html#leadership" class="smoothscroll">Leadership</a></li>
-        <li><a href="index.html#advisory" class="smoothscroll">Advisors</a></li>
-        <li><a href="index.html#opportunites" class="smoothscroll">Opportunities</a></li>
-        <li><a href="index.html#contact" class="smoothscroll">Contact Us</a></li>
-      </ul>
-    </nav>
-
-    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
   </header>
 
 
