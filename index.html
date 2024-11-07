@@ -45,10 +45,10 @@
 
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 3.5rem;
       font-weight: bold;
       margin: 0;
-      margin-top: -2%;
+      margin-top: -3%;
       text-align: left;
       flex: 1;
     }
@@ -232,10 +232,10 @@
     /* Desktop */
     @media (min-width: 1024px) {
       .header .text {
-        font-size: 2.7rem;
+        font-size: 3.7rem;
         line-height: 0.8;
         margin-left: 10%;
-        /* margin-top: 2%; */
+        /* margin-top: 3%; */
       }
 
       .header .text span {
@@ -246,7 +246,7 @@
     /* Tablet */
     @media (min-width: 768px) and (max-width: 1023px) {
       .header .text {
-        font-size: 2.2rem;
+        font-size: 3.2rem;
         margin-left: 5%;
         margin-top: 1.5%;
       }
@@ -264,7 +264,7 @@
 
       .header .text {
         font-size: 1.2rem;
-        margin-left: 2%;
+        margin-left: 3%;
         margin-top: 1%;
       }
 
@@ -337,7 +337,7 @@
         border-radius: 10px;
         text-align: center;
         position: relative;
-        z-index: 2;
+        z-index: 3;
         overflow: hidden;
         display: flex !important;
         flex-direction: column;
@@ -520,7 +520,7 @@
 
   <section id="home" style="height: 1000px; position: relative;">
     <video autoplay loop muted playsinline
-      style="width: 120%; height: 120%; object-fit: cover; transform: scale(1.2) translateX(15%) translateY(0%);">
+      style="width: 120%; height: 120%; object-fit: cover; transform: scale(1.3) translateX(15%) translateY(0%);">
       <source src="assets/img/Home/20481077-hd_1920_1080_30fps.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -580,7 +580,7 @@
     //ADD SUMMERY OF THE PAPER HERE
     const paragraphs = [
       "This study highlights the potential factors that are responsible for the recent weakening trends in the summer westerlies that prevail in South Asia along the monsoon trough region using various reanalysis as well as climate model simulations. It also discusses the associated changes in regional climate that are highly relevant to policymaking across South Asia.",
-      "Inadequate representation of surface-atmosphere interaction processes is a major source of uncertainty in numerical weather prediction models. Here, an effort has been made to improve the WRF model version 4.2.2 by introducing a unique theoretical framework suggested by Kader and Yaglom (1990) under convective conditions. In addition, to enhance the potential applicability of the WRF modeling system, various commonly used similarity functions under convective conditions have also been installed.",
+      "Inadequate representation of surface-atmosphere interaction processes is a major source of uncertainty in numerical weather prediction models. Here, an effort has been made to improve the WRF model version 4.3.3 by introducing a unique theoretical framework suggested by Kader and Yaglom (1990) under convective conditions. In addition, to enhance the potential applicability of the WRF modeling system, various commonly used similarity functions under convective conditions have also been installed.",
       "This study highlights the inconsistencies in the climate projections for precipitation and temperature from six generations of IPCC assessments for much of the Global south, which results in many challenges for climate change adaptation. It also discusses about the emerging technologies such as km-scale modeling, region-specific model customization, machine-learning and deep-learning approaches, constrained climate projections using observations as well as strengthening international collaborations to address these challenges.",
       "Numerous studies suggest that the climate change is likely to impact the distribution of various vector borne diseases such as malaria and dengue in higher altitudes and higher latitudes regions across the globe. This study evaluates the effects of climate change on future malaria transmission using the VECTRI model by forcing temperature and rainfall from a global climate model (CCSM4) over the state Odisha, India for the baseline period (1975-2005) and for the projection periods 2020s, 2050s, and 2080s under RCP8.5 emission scenario.",
       "It is well-known that the Artificial Intelligence and Machine Learning (AI/ML) models can complement the existing physical models. In this study, the AI/ML models are employed to predict the All India Summer Monsoon Rainfall (AISMR) for 2023. The data driven models are trained with historical AISMR data, Niño3.4 index data and categorical IOD data, which show promising results.",
@@ -601,7 +601,7 @@
     const links = [
       "",
       "https://gmd.copernicus.org/preprints/gmd-2024-3/",
-      "https://www.nature.com/articles/s41558-023-01778-2",
+      "https://www.nature.com/articles/s41558-023-01778-3",
       "https://www.nature.com/articles/s41598-022-13166-5",
       "https://www.nature.com/articles/s41598-023-44284-3",
       "https://iopscience.iop.org/article/10.1088/1748-9326/ac43e2"
@@ -656,7 +656,7 @@
       elements.forEach(el => el.classList.add('sliding-out'));
 
       setTimeout(() => {
-        // Step 2: Remove sliding-out class and update content
+        // Step 3: Remove sliding-out class and update content
         elements.forEach(el => el.classList.remove('sliding-out'));
 
         // Update text content and links
@@ -771,7 +771,7 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin-top: 2%;
+        margin-top: 3%;
     }
 
     .info-container img {
@@ -865,7 +865,7 @@
   <!-- Assume there's a header here that's not shown -->
 
   <section id="about" class="about section">
-    <div class="container section-title" style="margin-top: 2%;margin-bottom: 2%;" data-aos="fade-up">
+    <div class="container section-title" style="margin-top: 3%;margin-bottom: 3%;" data-aos="fade-up">
       <h2 style="color: #011e24;">About Us</h2>
     </div>
     
@@ -1018,14 +1018,14 @@
 @media (min-width: 401px) and (max-width : 1023px){
   .text-content h1 {
     font-size: 27px !important;
-    padding-left : 2% ; 
-    padding-right : 2% ; 
+    padding-left : 3% ; 
+    padding-right : 3% ; 
   }
   
   .text-content p {
     font-size: 18px !important;
-    padding-left : 2% ; 
-    padding-right : 2% ; 
+    padding-left : 3% ; 
+    padding-right : 3% ; 
   }
 }
 
@@ -1200,7 +1200,7 @@
 <style>
   #publications {
     padding-top: 1%;
-    padding-bottom: 2%;
+    padding-bottom: 3%;
     /*background-color: rgb(230, 227, 227);*/
     color: #333;
     background-color: rgba(246, 245, 245, 0.8);
@@ -1338,7 +1338,7 @@
             2023:</span><span class="pub-content"><strong> Climate projections for Himalaya-Tibetan
               Highland.</strong></span>
           <span class="pub-extention"><em> Theoritical and Applied Climatology,</em>
-            <strong>155(2), 1-11.</strong> DOI:10.1007/s00704-023-04677-w. </span>
+            <strong>155(3), 1-11.</strong> DOI:10.1007/s00704-023-04677-w. </span>
         </p>
       </div><!-- End Service Item -->
 
@@ -1351,7 +1351,7 @@
             2023:</span><span class="pub-content"><strong> A Need for Actionable Climate Projections Across the Global
               South.</strong></span>
           <span class="pub-extention"><em> Nature Climate Change,</em>
-            <strong>13(9), 883-886.</strong> DOI:10.1038/s41558-023-01778-2. </span>
+            <strong>13(9), 883-886.</strong> DOI:10.1038/s41558-023-01778-3. </span>
         </p>
       </div><!-- End Service Item -->
 
@@ -1467,7 +1467,7 @@
   <style>
     #leadership  {
       padding-top: -1%;
-      padding-bottom: 2%;
+      padding-bottom: 3%;
       background-color: rgba(255, 255, 255, 0.8);
     }
   @media (max-width : 1019px) {
@@ -1579,7 +1579,7 @@
 
 <div class="row gy-4">
 <!-- First Row -->
-<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
 <div class="team-member">
 <div class="member-img">
   <img src="assets/img/team/CO-PI/amitabh.jpg" class="img-fluid" alt="">
@@ -1597,7 +1597,7 @@
 <!-- Repeat above block for each team member in the first row -->
 
 <!-- Second Team Member -->
-<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
 <div class="team-member">
 <div class="member-img">
   <img src="assets/img/team/CO-PI/tanmoy.png" class="img-fluid" alt="">
@@ -1614,7 +1614,7 @@
 </div><!-- End Team Member -->
 
 <!-- Third Team Member -->
-<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
 <div class="team-member">
 <div class="member-img">
   <img src="assets/img/team/CO-PI/vamsi.jpg" class="img-fluid" alt="">
@@ -1631,7 +1631,7 @@
 </div><!-- End Team Member -->
 
 <!-- Fourth Team Member -->
-<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
 <div class="team-member">
 <div class="member-img">
   <img src="assets/img/team/CO-PI/amlendu_d.jpg" class="img-fluid" alt="">
@@ -1648,7 +1648,7 @@
 </div><!-- End Team Member -->
 
 <!-- Fifth Team Member -->
-<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
 <div class="team-member">
 <div class="member-img">
   <img src="assets/img/team/CO-PI/skm_new.jpg" class="img-fluid" alt="">
@@ -1668,7 +1668,7 @@
 <!-- Second Row -->
 <div class="row gy-4 mt-4">
 <!-- Add new team members for the second row here -->
-<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
 <div class="team-member">
 <div class="member-img">
   <img src="assets/images/team/prashant.jpg" class="img-fluid" alt="">
@@ -1684,10 +1684,10 @@
 </div>
 </div><!-- End Team Member -->
 
-<!-- Repeat similar blocks for team members 2-5 of the second row -->
+<!-- Repeat similar blocks for team members 3-5 of the second row -->
 
 <!-- Second Team Member of Second Row -->
-<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
 <div class="team-member">
 <div class="member-img">
   <img src="assets/img/team/CO-PI/panigrahi1.jpg" class="img-fluid" alt="">
@@ -1704,7 +1704,7 @@
 </div><!-- End Team Member -->
 
 <!-- Third Team Member of Second Row -->
-<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
 <div class="team-member">
 <div class="member-img">
   <img src="assets/img/team/CO-PI/mathilis.jpg" class="img-fluid" alt="">
@@ -1721,7 +1721,7 @@
 </div><!-- End Team Member -->
 
 <!-- Fourth Team Member of Second Row -->
-<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
 <div class="team-member">
 <div class="member-img">
   <img src="assets/img/team/shaurya.jpg" class="img-fluid" alt="">
@@ -1738,7 +1738,7 @@
 </div><!-- End Team Member -->
 
 <!-- Fifth Team Member of Second Row -->
-<div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+<div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
 <div class="team-member">
 <div class="member-img">
   <img src="assets/img/team/CO-PI/sawan_new1.jpg" class="img-fluid" alt="">
@@ -1758,11 +1758,11 @@
 
         <style>
           .custom-box {
-              margin-left: 33.2%; /* Adds space above the box */  
+              margin-left: 33.3%; /* Adds space above the box */  
           }
           </style>
         <!-- Fifth Team Member of Second Row -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch custom-box" data-aos="fade-up" data-aos-delay="500">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch custom-box" data-aos="fade-up" data-aos-delay="500">
           <div class="team-member endElement">
             <div class="member-img">
               <img src="assets/img/team/CO-PI/Amber.jpg" class="img-fluid" alt="">
@@ -1788,7 +1788,7 @@
     #advisory {
       padding-top: -1%;
       /* Ensure logical padding */
-      padding-bottom: 2%;
+      padding-bottom: 3%;
       background-color: rgba(246, 245, 245, 0.8);
     }
 @media (max-width : 360px ) {
@@ -1901,7 +1901,7 @@
     <div class="container" style="margin-top: 0%">
       <div class="row gy-4 mt-4">
         <!-- First Team Member of Third Row -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/KrishnaAchutaRao.jpg" class="img-fluid" alt="Member 1">
@@ -1918,7 +1918,7 @@
         <!-- Repeat above block for each team member in the first row -->
 
         <!-- Second Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/swadhin_behera.jpg" class="img-fluid" alt="Member 1">
@@ -1934,7 +1934,7 @@
         </div>
 
         <!-- Third Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/nareshb.jpg" class="img-fluid" alt="Member 1">
@@ -1950,7 +1950,7 @@
         </div>
 
         <!-- Fourth Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/skdash.jpg" class="img-fluid" alt="Member 1">
@@ -1966,7 +1966,7 @@
         </div>
 
         <!-- Fifth Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/fasullo_john.jpg" class="img-fluid" alt="Member 1">
@@ -1986,7 +1986,7 @@
 
       <div class="row gy-4 mt-4">
         <!-- First Team Member of Third Row -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/Gullies.jpg" class="img-fluid" alt="Member 1">
@@ -2003,7 +2003,7 @@
         <!-- Repeat above block for each team member in the first row -->
 
         <!-- Second Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/hoteit.jpg" class="img-fluid" alt="Member 1">
@@ -2019,7 +2019,7 @@
         </div>
 
         <!-- Third Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/kang.jpg" class="img-fluid" alt="Member 1">
@@ -2035,7 +2035,7 @@
         </div>
 
         <!-- Fourth Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/skm_new.jpg" class="img-fluid" alt="Member 1">
@@ -2051,7 +2051,7 @@
         </div>
 
         <!-- Fifth Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/sukumar.jpg" class="img-fluid" alt="Member 1">
@@ -2070,7 +2070,7 @@
 
       <div class="row gy-4 mt-4">
         <!-- First Team Member of Third Row -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/Negi.jpg" class="img-fluid" alt="Member 1">
@@ -2088,7 +2088,7 @@
         <!-- Repeat above block for each team member in the first row -->
 
         <!-- Second Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/balajirajagopalan.png" class="img-fluid" alt="Member 1">
@@ -2105,7 +2105,7 @@
         </div>
 
         <!-- Third Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/SBR.jpg" class="img-fluid" alt="Member 1">
@@ -2121,7 +2121,7 @@
         </div>
 
         <!-- Fourth Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/sandeep.jpg" class="img-fluid" alt="Member 1">
@@ -2137,7 +2137,7 @@
         </div>
 
         <!-- Fifth Team Member -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
           <div class="team-member">
             <div class="member-img">
               <img src="assets/images/team/frank.jpg" class="img-fluid" alt="Member 1">
@@ -2159,7 +2159,7 @@
 
       <style>
         .custom-box {
-          margin-left: 33.2%;
+          margin-left: 33.3%;
           /* Adds space above the box */
         }
       </style>
@@ -2168,7 +2168,7 @@
 
       <div class="row gy-4 mt-4 justify-content-left">
         <!-- First Team Member of Third Row -->
-        <div class="col-lg-2 col-md-6 d-flex align-items-stretch custom-box" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch custom-box" data-aos="fade-up" data-aos-delay="100">
           <div class="team-member endElement2">
             <div class="member-img">
               <img src="assets/images/team/tribbia.jpg" class="img-fluid" alt="Member 1">
@@ -2212,7 +2212,7 @@
         justify-content: center;
         position: relative;
         background-color: rgba(255, 255, 255, 0.8);
-        margin-bottom: 2%;
+        margin-bottom: 3%;
       }
 
       .content-wrapper {
@@ -2223,7 +2223,7 @@
       }
 
       .logo {
-        margin-left: 2%;
+        margin-left: 3%;
         /* Adjust as necessary */
         margin-top: 0%;
         /* Adjust vertically */
@@ -2289,7 +2289,7 @@
     <section id="opportunites">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2 style="color: #011e24; margin-top: -2%; margin-bottom: 2%;">Opportunities</h2>
+        <h2 style="color: #011e24; margin-top: -3%; margin-bottom: 3%;">Opportunities</h2>
       </div>
 
       <!-- Main content area with logo on the right -->
@@ -2375,7 +2375,7 @@
       <h2 style=" color: #011e24; margin-top: 5%;">Contact Us</h2>
     </div><!-- End Section Title -->
 
-    <div class="container" style="margin-top: -2%; " data-aos="fade-up" data-aos-delay="100">
+    <div class="container" style="margin-top: -3%; " data-aos="fade-up" data-aos-delay="100">
       <div class="row gy-4 justify-content-center">
         <div class="col-lg-5">
           <div class="info-wrap">
