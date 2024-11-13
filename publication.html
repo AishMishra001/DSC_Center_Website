@@ -402,6 +402,29 @@
 
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script>
+
+function toggleMenu() {
+      const navMenu = document.getElementById('navmenu');
+      navMenu.classList.toggle('open');
+    }
+
+    document.querySelectorAll(".nav-links").forEach(link => {
+      link.addEventListener('click', () => {
+        const navmenu = document.getElementById('navmenu');
+        if (navmenu.classList.contains('open')) {
+          navmenu.classList.remove('open');
+        }
+      })
+    })
+    window.addEventListener('scroll', function () {
+      var header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    
     window.addEventListener('scroll', function() {
         var header = document.getElementById('header');
         if (window.scrollY > 50) {
