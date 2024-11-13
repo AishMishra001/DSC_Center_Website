@@ -811,11 +811,11 @@
     }
 
     /* Responsive styles for screens less than 1024px */
-    @media (max-width: 1023px) {
+    @media (min-width : 787px) and (max-width: 1023px) {
         .info-container {
             flex-direction: column;
             align-items: center;
-            margin-top: 5%;
+            margin-top: 5%; 
         }
 
         .info-container img {
@@ -839,6 +839,8 @@
             padding: 20px;
         }
     }
+
+
 
     .paragraph{
       background-color: rgb(246, 245, 245);
@@ -867,7 +869,17 @@
         display:  none ;
       }
     }
-</style>
+
+    @media ( max-width : 767px ) {
+           .animation1{
+              max-width : 25% 
+           }
+           .animation2 {
+              max-width : 25%
+           }
+    }
+
+  </style>
 </head>
 
 
@@ -920,11 +932,11 @@
             </div>
 
             <div class="container" style="position: absolute; top:12%; left: 45%;">
-                <img src="assets/img/About/rectangle2.png" alt="" class="wave-image" style="max-width: 20%; height: auto;" />
+                <img class="animation1" src="assets/img/About/rectangle2.png" alt="" class="wave-image" style="max-width: 20%; height: auto;" />
             </div>
 
-            <div class="container" style="position: absolute; bottom:12%; left: -20%;">
-                <img src="assets/img/About/Circle.gif" alt="" class="wave-image" style="max-width: 10%; height: auto;" />
+            <div class="container" style=" position: absolute; bottom:12%; left: -20%;">
+                <img class="animation2" src="assets/img/About/Circle.gif" alt="" class="wave-image" style="max-width: 10%; height: auto;" />
             </div>
         </div>
     </div>
@@ -932,15 +944,6 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
 
 
 <!-------------------------------------------RESEARCH----------------------------------->
