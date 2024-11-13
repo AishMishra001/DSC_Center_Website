@@ -331,7 +331,8 @@
     /* Large screens (1024px and up) */
     @media (min-width: 1024px) {
       .text-box {
-        width: 600px;
+        width: 640px;
+        height: 370px;
         padding: 20px;
         background-color: rgba(200, 252, 255, 0.5);
         border-radius: 10px;
@@ -342,11 +343,12 @@
         display: flex !important;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         right: 90px ;
       }
     }
-    
+
+
     /* Medium screens (768px - 1023px) */
     @media (min-width: 768px) and (max-width: 1024px) {
       .text-box {
@@ -859,6 +861,12 @@
         margin-top: 40px ;
       }
     }
+
+    @media (min-width : 1024px) {
+      .img2{
+        display:  none ;
+      }
+    }
 </style>
 </head>
 
@@ -908,7 +916,7 @@
 
 
             <div class="container" style="position: absolute; top:55%; left:45%;">
-                <img src="assets/img/About/About-design.gif" style="max-width: 25%; height: auto;" />
+                <img class="img2" src="assets/img/About/About-design.gif" style="max-width: 25%; height: auto;" />
             </div>
 
             <div class="container" style="position: absolute; top:12%; left: 45%;">
