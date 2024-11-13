@@ -352,12 +352,13 @@
     /* Medium screens (768px - 1023px) */
     @media (min-width: 768px) and (max-width: 1024px) {
       .text-box {
-        width: 400px;
+        width: 600px;
+        height: 370px;
         padding: 10px;
         background-color: rgba(200, 252, 255, 0.5);
         display: flex !important;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         margin-left: auto;
         margin-right: auto;
         flex-direction: column;
@@ -365,6 +366,12 @@
         border-radius: 10px;
       }
     } 
+
+    @media (min-width : 1220px) {
+      .text-box{
+          margin-right : 30% ; 
+      }
+    }
     
     /* Small screens (up to 767px) */
     @media (max-width: 767px) {
@@ -529,7 +536,9 @@
 
     <div id="text-box" data-aos="fade-up" class="text-box">
       <h1 id="fixed-title" style="font-size: 20px; color: #ffffff; position: relative;">
-        Research Highlights
+        <span>
+ Research Highlights
+        </span>
         <span class="underline"></span>
       </h1>
       <h2 id="dynamic-title" style="font-size: 18px; color: white; text-align: left; margin-top: 50px; left: 5px;">
